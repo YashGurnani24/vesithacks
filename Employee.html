@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+#c3{
+	float:right;
+
+	border-radius:50%;
+	background-color:dodgerblue;
+	cursor:pointer;
+}
+</style>
+</head>
+<body>
+<script>
+function Sub(){
+	var x=document.getElementById("d1").value;
+	if(x==""){
+		alert("Form cannot be Submiited");
+	}
+	else{
+		alert(x+" Form Submiited");
+	}
+	
+}
+function Res(){
+	document.getElementById("f1").reset();
+}
+</script>
+<button id="c3" onclick="home.html">logout</button>
+<form name="myform" id="f1">
+<textarea name="Code" id="d1" placeholder="Enter your Code/text/slogan"rows="25" id="c1"cols="45"required></textarea><br><br>
+Team:<input type="text" value="Abc" required><br><br>
+<button onclick="Sub()">Submit</button>
+<button onclick="Res()">Reset</button><br>
+</form>
+<p id="c2"></p>
+</body>
+</html>
