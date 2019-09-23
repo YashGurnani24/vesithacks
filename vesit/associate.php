@@ -153,7 +153,7 @@ section{
     <br>
     <h3>Click to report the  weekly performance of the employees and submit it to head</h3>
     <br>
-    <a href="#" class="button">Report</a>
+    <a href="question.php" class="button">Report</a>
 
   </div>
 </div>

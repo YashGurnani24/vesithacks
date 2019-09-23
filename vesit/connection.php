@@ -1,7 +1,7 @@
 <?php
 function OpenCon()
  {
- $dbhost = "509f6d05.ngrok.io";
+ $dbhost = "22f1d1ed.ngrok.io";
  $dbuser = "root";
  $dbpass = "";
  $db = "ecl";
