@@ -120,6 +120,7 @@ span.psw {
 
       }
       else{
+        
         header("Location: employee.php");
     }
     }

@@ -114,7 +114,7 @@ span.psw {
       $Username=$_POST['uname'];
       $password=$_POST['psw'];
       $sql1=$conn->query("select name from subordinator where name='$Username' and password='$password'");
-      echo "$sql1";
+      
       if($sql1-> num_rows==0){
             echo "Invalid username or password";
 
