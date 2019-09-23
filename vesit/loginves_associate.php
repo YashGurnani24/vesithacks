@@ -106,7 +106,6 @@ span.psw {
 <?php
   include 'connection.php';
   $conn =opencon();
-  echo "connected successfully";
 
   if(isset($_POST['submit'])){
     if(isset($_POST['uname'])){
@@ -114,14 +113,15 @@ span.psw {
 
       $Username=$_POST['uname'];
       $password=$_POST['psw'];
-      $sql1=$conn->query("select username from associate where username='$Username' and password='$password'");
+      $sql1=$conn->query("select username from subordinator where username='$Username' and password='$password'");
       if($sql1-> num_rows==0){
             echo "Invalid username or password";
 
       }
       else{
         #if ($sql1="associate"){
-        header("Location: vesit/associate.php");
+
+        header("Location: associate.php");
         #}
         #else{
 

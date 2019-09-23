@@ -106,7 +106,7 @@ span.psw {
 <?php
   include 'connection.php';
   $conn =opencon();
-  echo "connected successfully";
+  
 
   if(isset($_POST['submit'])){
     if(isset($_POST['uname'])){
@@ -120,7 +120,7 @@ span.psw {
 
       }
       else{
-        header("Location: vesit/employee.php");
+        header("Location: employee.php");
     }
     }
 

@@ -138,7 +138,7 @@ section{
 
 <div class="topnav">
   <div id="mySidenav" class="sidenav">
-    <a href="#" id="logout">Logout</a>
+    <a href="front1.html" id="logout">Logout</a>
   </div>
 </div>
 <h1 class="welcome">WELCOME HEAD/MANAGER</h1>
@@ -173,10 +173,6 @@ section{
   </div>
 </div>
 
-<div class="footer">
-  <div class="down">
-    <a href="#" class="button">Back to Home</a>
-  </div>
     
 </div>
 </body>
