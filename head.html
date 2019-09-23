@@ -43,7 +43,7 @@ section{
 }
 .footer{
   background-color: #95adbe;
-  height : 350px;
+  height : 100px;
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -78,13 +78,13 @@ section{
   position: absolute;
   top: 0px;
   bottom: 20px;
-  background-color: #696464;
+  background-color: #e5e5e5;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
   justify-content: center;
 
-  margin-left: 80%;
+  margin-left: 62%;
   height: 400px;
   font-style:Arial;
   text-decoration: none;
@@ -102,6 +102,7 @@ section{
   height: 400px;
   font-style:Arial;
   text-decoration: none;
+  color: #64b2cd;
 }
 .img{
   height: 400px;
@@ -126,37 +127,57 @@ section{
 .welcome{
   text-align: center;
 }
+
+.down{
+  padding-top: 30px;
+  padding-left: 20px;
+}
 </style>
 </head>
 <body>
 
 <div class="topnav">
   <div id="mySidenav" class="sidenav">
-    <a href="front1.html" id="logout">Logout</a>
+    <a href="#" id="logout">Logout</a>
   </div>
 </div>
-<h1 class="welcome">WELCOME ASSOCIATE</h1>
+<h1 class="welcome">WELCOME HEAD/MANAGER</h1>
 
 <div class="container">
-  <img class="img" src="emp.jpg" alt="Norway" style="width:79%;">
+  <img class="img" src="rep_head.jpg" alt="Norway" style="width:62%;">
   <div class="text-block">
-    <h2>Employee Details</h2>
+    <h2>View Reports</h2>
     <br>
-    <p>Click to view Employee Details</p>
+    <p>Tap here to see the progress and performance of each employee</p>
     <a href="#" class="button">View</a>
   </div>
 </div>
 <div class="container">
-  <img class="img1" src="report.jpg" alt="Norway" style="width:50%;">
+  <img class="img1" src="rating.jpg" alt="Norway" style="width:50%;">
   <div class="text-block1">
-    <h2>Make a Report</h2>
+    <h2>Assign Rating</h2>
     <br>
-    <h3>Click to report the  weekly performance of the employees and submit it to head</h3>
+    <p>Assign rating in points from 1 (Min) to 10 (Max). There may be Zero points for no work or no submissions.</p>
     <br>
-    <a href="#" class="button">Report</a>
-
+    <a href="#" class="button">Assign</a>
+  </div>
+</div>
+<div class="container">
+  <img class="img" src="teams.jpg" alt="Norway" style="width:62%;">
+  <div class="text-block">
+    <h2><VAR>View Teams</VAR></h2>
+    <br>
+    <p>View Current Teams and thier Members or Shift Member to other Teams.</p>
+    <br>
+    <a href="#" class="button">View</a>
   </div>
 </div>
 
+<div class="footer">
+  <div class="down">
+    <a href="#" class="button">Back to Home</a>
+  </div>
+    
+</div>
 </body>
 </html>

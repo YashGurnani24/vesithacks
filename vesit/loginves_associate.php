@@ -1,21 +1,4 @@
-<?php
-  include 'connection.php';
-  $conn =opencon();
-  echo "connected successfully"
 
-  if(isset($_POST['submit'])){
-      $Username=$_POST['uname'];
-      $password=$_POST['psw'];
-      $sql1=$conn->query("select type from login where username='$usename' and password='$password'");
-      if($sql1-> num_rows==0){
-            echo "Invalid username or password";
-
-      }
-      else{
-
-        echo"found";
-      }
-    ?>
 <!DOCTYPE html>
 
 <html>
@@ -120,7 +103,36 @@ span.psw {
     <span class="psw">Forgot &nbsp;<a href="#">password?</a></span>
   </div>
 </form>
+<?php
+  include 'connection.php';
+  $conn =opencon();
+  echo "connected successfully";
 
+  if(isset($_POST['submit'])){
+    if(isset($_POST['uname'])){
+      if(isset($_POST['psw'])){
+
+      $Username=$_POST['uname'];
+      $password=$_POST['psw'];
+      $sql1=$conn->query("select username from associate where username='$Username' and password='$password'");
+      if($sql1-> num_rows==0){
+            echo "Invalid username or password";
+
+      }
+      else{
+        #if ($sql1="associate"){
+        header("Location: vesit/associate.php");
+        #}
+        #else{
+
+         # echo "ok";
+        #}
+    }
+    }
+
+      }
+    }
+?>
 
 
 </body>
